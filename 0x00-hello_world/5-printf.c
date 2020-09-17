@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - main is void
- * puts - writes the string s and a trailing newline to stdout
+ * printf - Print "with proper grammar, but the outcome is a piece of art,"
  * Return: end value 0
 */
 
