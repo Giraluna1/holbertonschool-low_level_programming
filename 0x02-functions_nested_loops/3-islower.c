@@ -1,5 +1,5 @@
 #include "holberton.h"
-#include <ctype.h>
+
 /**
  * _islower - hecks whether a character is lowercase alphabet (a-z) or not.
  * @c: variable integre
@@ -8,12 +8,12 @@
 
 int _islower(int c)
 {
-	if (islower(c))
-	{
-		return (1);
-	}
-	else
-	{
-		return (0);
-	}
+if (c >= 97 && c <= 122)
+{
+return (1);
+}
+else
+{
+return (0);
+}
 }
