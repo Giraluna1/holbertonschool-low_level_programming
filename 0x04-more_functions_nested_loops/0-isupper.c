@@ -1,5 +1,9 @@
 #include "holberton.h"
-
+/**
+ * _isupper - checks for uppercasse character
+ * @c: character
+ * Return: 1 o 0
+ */
 int _isupper(int c)
 
 {
@@ -7,7 +11,7 @@ int _isupper(int c)
 	{
 		return (1);
 	}
-	else 
+	else
 	{
 		return (0);
 	}
