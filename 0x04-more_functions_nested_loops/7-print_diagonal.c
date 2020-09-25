@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * print_diagonal - draws a diagonal line
- * @n: number
+ * @n: number times
  */
 
 void print_diagonal(int n)
@@ -15,7 +15,7 @@ void print_diagonal(int n)
 	else
 		for (i = 1; i <= n; i++)
 		{
-			for (j = 1; j <= i; j++)
+			for (j = 1; j < i; j++)
 			{
 				_putchar(' ');
 			}
