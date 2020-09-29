@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- *
- *
+ * print_to_98 - display the sequence to 98
+ * @n: value
  */
 
 void print_to_98(int n)
@@ -11,17 +11,17 @@ void print_to_98(int n)
 	{
 		for (n = n; n >= 98; n--)
 		{
-      		printf("%d", n);
-		if(n != 98)
-			printf(", ");		
+			printf("%d", n);
+			if (n != 98)
+				printf(", ");
 		}
 	}
-	else 
+	else
 	{
 		for (n = n; n <= 98; n++)
 		{
-		 	printf("%d", n);
-			if(n != 98)
+			printf("%d", n);
+			if (n != 98)
 				printf(", ");
 		}
 	}
