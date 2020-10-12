@@ -28,6 +28,7 @@ int main(int argc, char *argv[])
 		{
 			if (n - a[i] >= 0)
 			{
+				n = n - a[i];
 				counter++;
 			}
 		}
