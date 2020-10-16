@@ -11,10 +11,9 @@ int *array_range(int min, int max)
 	int *a = NULL;
 	int i, size;
 
-	if (min > max)
+	if (min >= max)
 		return (NULL);
 	size = max - min;
-	/*printf("%d", size)*/;
 	if (size != max)
 		size++;
 	a = malloc(size  * sizeof(int));
