@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
  * array_range - create an array of integers
  * @min: range min
@@ -10,20 +11,17 @@ int *array_range(int min, int max)
 	int *a = NULL;
 	int i, size;
 
-	size = max - min + 1;
-
-	a = malloc(size * sizeof(int));
-
 	if (min > max)
 		return (NULL);
-	if (size == 0)
-	{
-		return (NULL);
-	}
+	size = max - min;
+	/*printf("%d", size)*/;
+	if (size != max)
+		size++;
+	a = malloc(size  * sizeof(int));
+
 	if (a == NULL)
 		return (NULL);
-
-	i = 0;
+	i = min;
 	while (i <= size)
 	{
 		a[i] = min;
