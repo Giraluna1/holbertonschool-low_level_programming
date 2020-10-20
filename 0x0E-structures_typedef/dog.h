@@ -2,7 +2,7 @@
 #define DOG_H
 
 /**
- * struct dog_t - Django info
+ * struct dog - Django info
  * @name: name of dog
  * @age: age of dog
  * @owner: owner of dog
