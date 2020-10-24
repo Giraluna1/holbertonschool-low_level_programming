@@ -1,11 +1,16 @@
 #ifndef VARIADIC_FUNTIONS_H
 #define VARIADIC_FUNTIONS_H
 #include <stdarg.h>
+/**
+ * print - struct print formats
+ * @type: data type
+ * @ap: lista arguments
+ */
 
-typedef struct print 
+typedef struct print
 {
 	char type;
-	void(*f)(va_list ap);
+	void (*f)(va_list ap);
 } print;
 
 
