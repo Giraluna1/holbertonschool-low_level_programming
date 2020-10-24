@@ -57,6 +57,8 @@ void print_all(const char * const format, ...)
 			if (format[i] == arr[j].type)
 			{
 				arr[j].f(ap);
+				if (format[i + 1] != '\0')
+					printf(", ");
 			}
 			j++;
 		}
