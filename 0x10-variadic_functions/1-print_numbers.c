@@ -25,6 +25,7 @@ for (i = 0; i < n; i++)
 	else
 		printf("%d", va_arg(ap, int));
 }
+printf("\n");
 va_end(ap);
 }
 
