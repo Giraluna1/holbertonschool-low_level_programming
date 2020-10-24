@@ -2,9 +2,9 @@
 #define VARIADIC_FUNTIONS_H
 #include <stdarg.h>
 /**
- * print - struct print formats
+ * struct print - struct print formats
  * @type: data type
- * @ap: lista arguments
+ * @f: pointer
  */
 
 typedef struct print
