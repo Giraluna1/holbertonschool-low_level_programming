@@ -31,6 +31,10 @@ void pflo(va_list ap)
 void pstr(va_list ap)
 {
 	printf("%s", va_arg(ap, char *));
+	if (!va_arg(ap, char *))
+	{
+		printf("(nil)");
+	}
 }
 /**
  * print_all - print all data type
@@ -41,15 +45,14 @@ void print_all(const char * const format, ...)
 {
 	va_list ap;
 	int i, j;
-	print arr[4] = {{'c', pchar}, 
-		{'i', pint},
-		{'f', pflo},
-		{'s', pstr}
+	print arr[4] = {{'c', pchar},
+			{'i', pint},
+			{'f', pflo},
+			{'s', pstr}
 	};
-	va_start(ap, format);	
-
+	va_start(ap, format);
 	i = 0;
-	while (format [i] != '\0')
+	while (format[i] && format)
 	{
 		j = 0;
 		while (j < 4)
@@ -67,4 +70,3 @@ void print_all(const char * const format, ...)
 	printf("\n");
 	va_end(ap);
 }
-
