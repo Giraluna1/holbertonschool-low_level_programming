@@ -8,15 +8,13 @@
  */
 size_t list_len(const list_t *h)
 {
-	unsigned int i = 1;
-	list_t *box = NULL;
+	size_t n = 0;
 
-	box = h->next;
-	while (box)
+	while (h)
 	{
-		box = box->next;
-		i++;
+		h = h->next;
+		n++;
 	}
 
-	return (i);
+	return (n);
 }
