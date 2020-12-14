@@ -1,4 +1,4 @@
-#  PYHTON IF ELSE LOOPS FUNCTIONS
+#  DOUBLY LINKED LIST
 This project you find several task to learn program with python about this topics:
 
 - Handling Doubly linkked lists
