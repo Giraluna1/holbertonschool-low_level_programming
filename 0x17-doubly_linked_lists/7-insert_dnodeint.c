@@ -34,7 +34,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		printf("esta entrando aqui %lu\n", dlistint_len(*h));
 		return (NULL);
 	}
-	if (idx == 0 || !h)
+	if ((idx == 0) || !h)
 	{
 		new_node = add_dnodeint(h, n);
 		return (new_node);
