@@ -3,7 +3,7 @@
  * linear_search - This function search for value using Linear serach algorithm
  * @array: pointer to the sorted array
  * @size: number of elements in array
- * @value: is tehe value to search for
+ * @value: is the value to search for
  * Return: The index of the number to serch for
  */
 
